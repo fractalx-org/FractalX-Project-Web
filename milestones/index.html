@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Milestones — FractalX Project</title>
+    <meta name="description" content="Project milestones of FractalX — proposal, progress presentations, final assessment and viva details."/>
+    <link rel="canonical" href="https://project.fractalx.org/milestones/"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png"/>
+    <meta name="theme-color" content="#000000"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>(function(){const s=localStorage.getItem('frx-theme'),p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(s==='light'||(!s&&!p))document.documentElement.classList.add('light')})();</script>
+    <link rel="stylesheet" href="/assets/css/main.css"/>
+</head>
+<body>
+
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="/" class="nav-logo">
+            <div class="logo-mark">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5"/><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="8.5" x2="22" y2="8.5"/><line x1="2" y1="15.5" x2="22" y2="15.5"/></svg>
+            </div>
+            FractalX <span style="color:var(--text3);font-weight:400;font-size:13px;margin-left:2px">Project</span>
+        </a>
+        <div class="nav-sep"></div>
+        <div class="nav-links">
+            <a href="/" class="nav-link">Home</a>
+            <a href="/domain/" class="nav-link">Domain</a>
+            <a href="/milestones/" class="nav-link active">Milestones</a>
+            <a href="/documents/" class="nav-link">Documents</a>
+            <a href="/presentations/" class="nav-link">Presentations</a>
+            <a href="/about/" class="nav-link">About</a>
+            <a href="/contact/" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-right">
+            <span class="nav-badge">v0.4.1</span>
+            <button class="tt" id="themeToggle" aria-label="Toggle theme">
+                <svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            </button>
+            <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+        </div>
+    </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+    <a href="/" class="mobile-link">Home</a>
+    <a href="/domain/" class="mobile-link">Domain</a>
+    <a href="/milestones/" class="mobile-link active">Milestones</a>
+    <a href="/documents/" class="mobile-link">Documents</a>
+    <a href="/presentations/" class="mobile-link">Presentations</a>
+    <a href="/about/" class="mobile-link">About</a>
+    <a href="/contact/" class="mobile-link">Contact</a>
+</div>
+
+<div class="page-hero">
+    <div class="page-hero-inner">
+        <div class="page-tag"><span class="dot"></span>Project Timeline</div>
+        <h1 class="page-h1">Project <span class="hl">Milestones</span></h1>
+        <p class="page-sub">All assessments, deliverables, and presentations — with details, marks allocation, and status for each milestone.</p>
+    </div>
+</div>
+
+<section class="section">
+    <div class="section-inner">
+        <!-- Summary bar -->
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;margin-bottom:48px">
+            <div style="background:var(--bg1);padding:20px;text-align:center">
+                <div style="font-size:24px;font-weight:700;color:var(--green);margin-bottom:4px">3</div>
+                <div style="font-size:12px;color:var(--text3)">Completed</div>
+            </div>
+            <div style="background:var(--bg1);padding:20px;text-align:center;border-left:1px solid var(--border)">
+                <div style="font-size:24px;font-weight:700;color:var(--orange);margin-bottom:4px">1</div>
+                <div style="font-size:12px;color:var(--text3)">In Progress</div>
+            </div>
+            <div style="background:var(--bg1);padding:20px;text-align:center;border-left:1px solid var(--border)">
+                <div style="font-size:24px;font-weight:700;color:var(--text3);margin-bottom:4px">1</div>
+                <div style="font-size:12px;color:var(--text3)">Upcoming</div>
+            </div>
+            <div style="background:var(--bg1);padding:20px;text-align:center;border-left:1px solid var(--border)">
+                <div style="font-size:24px;font-weight:700;color:var(--white);margin-bottom:4px">5</div>
+                <div style="font-size:12px;color:var(--text3)">Total Milestones</div>
+            </div>
+        </div>
+
+        <!-- Milestone dropdown selector -->
+        <div class="section-label">Browse by Milestone</div>
+        <h2 class="section-h mb-32">Select a <span class="hl">Milestone</span></h2>
+
+        <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:48px" id="milestoneAccordion">
+
+            <!-- PP -->
+            <div class="dropdown" id="ms-pp">
+                <button class="dropdown-btn" onclick="toggleMS('ms-pp')">
+                    <span class="badge badge-green" style="margin-right:8px"><span class="dot"></span>Completed</span>
+                    <div>
+                        <div style="font-size:14px;font-weight:600;color:var(--white)">Project Proposal</div>
+                        <div style="font-size:12px;color:var(--text3);margin-top:2px">Initial proposal defining scope, objectives, and methodology</div>
+                    </div>
+                    <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="dropdown-content" id="ms-pp-content">
+                    <div style="padding:24px;display:grid;grid-template-columns:1fr 1fr;gap:24px">
+                        <div>
+                            <div style="font-size:12px;font-family:var(--mono);color:var(--text3);margin-bottom:16px">ASSESSMENT DETAILS</div>
+                            <div style="display:flex;flex-direction:column;gap:12px">
+                                <div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--border)">
+                                    <span style="font-size:13px;color:var(--text2)">Milestone</span>
+                                    <span style="font-size:13px;font-weight:600;color:var(--white)">Project Proposal</span>
+                                </div>
+                                <div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--border)">
+                                    <span style="font-size:13px;color:var(--text2)">Date</span>
+                                    <span style="font-size:13px;font-family:var(--mono);color:var(--white)">2023 — Q3</span>
+                                </div>
+                                <div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--border)">
+                                    <span style="font-size:13px;color:var(--text2)">Marks Allocated</span>
+                                    <span style="font-size:13px;font-weight:600;color:var(--orange)">6%</span>
+                                </div>
+                                <div style="display:flex;justify-content:space-between;align-items:center">
+                                    <span style="font-size:13px;color:var(--text2)">Status</span>
+                                    <span class="badge badge-green"><span class="dot"></span>Completed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div style="font-size:12px;font-family:var(--mono);color:var(--text3);margin-bottom:16px">DESCRIPTION</div>
+                            <p style="font-size:13.5px;color:var(--text2);line-height:1.7;margin-bottom:16px">The project proposal established the research scope, identified the gap in automated microservices decomposition tooling, defined the FractalX annotation model, and presented the planned architecture and evaluation strategy.</p>
+                            <a href="/documents/" class="btn btn-ghost" style="font-size:12px;padding:7px 14px">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                                View Proposal Document
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PP1 -->
+            <div class="dropdown" id="ms-pp1">
+                <button class="dropdown-btn" onclick="toggleMS('ms-pp1')">
+                    <span class="badge badge-green" style="margin-right:8px"><span class="dot"></span>Completed</span>
+                    <div>
+                        <div style="font-size:14px;font-weight:600;color:var(--white)">Progress Presentation 1</div>
+                        <div style="font-size:12px;color:var(--text3);margin-top:2px">Core AST engine and annotation processor demonstration</div>
+                    </div>
+                    <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="dropdown-content" id="ms-pp1-content">
+                    <div style="padding:24px;display:grid;grid-template-columns:1fr 1fr;gap:24px">
+                        <div>
+                            <div style="font-size:12px;font-family:var(--mono);color:var(--text3);margin-bottom:16px">ASSESSMENT DETAILS</div>
+                            <div style="display:flex;flex-direction:column;gap:12px">
+                                <div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--border)">
+                                    <span style="font-size:13px;color:var(--text2)">Milestone</span>
+                                    <span style="font-size:13px;font-weight:600;color:var(--white)">Progress Presentation 1</span>
+                                </div>
+                                <div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--border)">
+                                    <span style="font-size:13px;color:var(--text2)">Date</span>
+                                    <span style="font-size:13px;font-family:var(--mono);color:var(--white)">2024 — Q1</span>
+                                </div>
+                                <div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--border)">
+                                    <span style="font-size:13px;color:var(--text2)">Marks Allocated</span>
+                                    <span style="font-size:13px;font-weight:600;color:var(--orange)">15%</span>
+                                </div>
+                                <div style="display:flex;justify-content:space-between;align-items:center">
+                                    <span style="font-size:13px;color:var(--text2)">Status</span>
+                                    <span class="badge badge-green"><span class="dot"></span>Completed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div style="font-size:12px;font-family:var(--mono);color:var(--text3);margin-bottom:16px">DESCRIPTION</div>
+                            <p style="font-size:13.5px;color:var(--text2);line-height:1.7;margin-bottom:16px">Demonstrated the working AST engine, annotation processor, and initial code generation pipeline. Showed live decomposition of a two-module monolith into independent Spring Boot services with Maven build and unit tests passing.</p>
+                            <a href="/presentations/" class="btn btn-ghost" style="font-size:12px;padding:7px 14px">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                                View Slides
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PP2 -->
+            <div class="dropdown" id="ms-pp2">
+                <button class="dropdown-btn" onclick="toggleMS('ms-pp2')">
+                    <span class="badge badge-green" style="margin-right:8px"><span class="dot"></span>Completed</span>
+                    <div>
+                        <div style="font-size:14px;font-weight:600;color:var(--white)">Progress Presentation 2</div>
+                        <div style="font-size:12px;color:var(--text3);margin-top:2px">Full platform — NetScope, Saga orchestration, Admin dashboard</div>
+                    </div>
+                    <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="dropdown-content" id="ms-pp2-content">
+                    <div style="padding:24px;display:grid;grid-template-columns:1fr 1fr;gap:24px">
+                        <div>
+                            <div style="font-size:12px;font-family:var(--mono);color:var(--text3);margin-bottom:16px">ASSESSMENT DETAILS</div>
+                            <div style="display:flex;flex-direction:column;gap:12px">
+                                <div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--border)">
+                                    <span style="font-size:13px;color:var(--text2)">Milestone</span>
+                                    <span style="font-size:13px;font-weight:600;color:var(--white)">Progress Presentation 2</span>
+                                </div>
+                                <div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--border)">
+                                    <span style="font-size:13px;color:var(--text2)">Date</span>
+                                    <span style="font-size:13px;font-family:var(--mono);color:var(--white)">2024 — Q3</span>
+                                </div>
+                                <div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--border)">
+                                    <span style="font-size:13px;color:var(--text2)">Marks Allocated</span>
+                                    <span style="font-size:13px;font-weight:600;color:var(--orange)">18%</span>
+                                </div>
+                                <div style="display:flex;justify-content:space-between;align-items:center">
+                                    <span style="font-size:13px;color:var(--text2)">Status</span>
+                                    <span class="badge badge-green"><span class="dot"></span>Completed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div style="font-size:12px;font-family:var(--mono);color:var(--text3);margin-bottom:16px">DESCRIPTION</div>
+                            <p style="font-size:13.5px;color:var(--text2);line-height:1.7;margin-bottom:16px">Demonstrated the complete FractalX platform including: NetScope gRPC inter-service communication, distributed saga orchestration with compensation, the 15-section admin dashboard, OpenTelemetry tracing integration, and Docker Compose deployment.</p>
+                            <a href="/presentations/" class="btn btn-ghost" style="font-size:12px;padding:7px 14px">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                                View Slides
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Final -->
+            <div class="dropdown" id="ms-final">
+                <button class="dropdown-btn" onclick="toggleMS('ms-final')">
+                    <span class="badge badge-orange" style="margin-right:8px"><span class="dot"></span>In Progress</span>
+                    <div>
+                        <div style="font-size:14px;font-weight:600;color:var(--white)">Final Assessment</div>
+                        <div style="font-size:12px;color:var(--text3);margin-top:2px">Full project submission with report, evaluation, and live demo</div>
+                    </div>
+                    <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="dropdown-content" id="ms-final-content">
+                    <div style="padding:24px;display:grid;grid-template-columns:1fr 1fr;gap:24px">
+                        <div>
+                            <div style="font-size:12px;font-family:var(--mono);color:var(--text3);margin-bottom:16px">ASSESSMENT DETAILS</div>
+                            <div style="display:flex;flex-direction:column;gap:12px">
+                                <div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--border)">
+                                    <span style="font-size:13px;color:var(--text2)">Milestone</span>
+                                    <span style="font-size:13px;font-weight:600;color:var(--white)">Final Assessment</span>
+                                </div>
+                                <div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--border)">
+                                    <span style="font-size:13px;color:var(--text2)">Date</span>
+                                    <span style="font-size:13px;font-family:var(--mono);color:var(--white)">2025 — Q2</span>
+                                </div>
+                                <div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--border)">
+                                    <span style="font-size:13px;color:var(--text2)">Marks Allocated</span>
+                                    <span style="font-size:13px;font-weight:600;color:var(--orange)">40%</span>
+                                </div>
+                                <div style="display:flex;justify-content:space-between;align-items:center">
+                                    <span style="font-size:13px;color:var(--text2)">Status</span>
+                                    <span class="badge badge-orange"><span class="dot"></span>In Progress</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div style="font-size:12px;font-family:var(--mono);color:var(--text3);margin-bottom:16px">DESCRIPTION</div>
+                            <p style="font-size:13.5px;color:var(--text2);line-height:1.7;margin-bottom:16px">The final assessment covers the complete project deliverable: the final research report (individual + group), the live demonstration of FractalX decomposing a real-world monolith, and the project website submission. All written documents and the evaluation report must be submitted.</p>
+                            <a href="/documents/" class="btn btn-ghost" style="font-size:12px;padding:7px 14px">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                                Final Documents
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Viva -->
+            <div class="dropdown" id="ms-viva">
+                <button class="dropdown-btn" onclick="toggleMS('ms-viva')">
+                    <span class="badge badge-peri" style="margin-right:8px">Upcoming</span>
+                    <div>
+                        <div style="font-size:14px;font-weight:600;color:var(--white)">Viva / Oral Examination</div>
+                        <div style="font-size:12px;color:var(--text3);margin-top:2px">Individual oral defence of the research project</div>
+                    </div>
+                    <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="dropdown-content" id="ms-viva-content">
+                    <div style="padding:24px;display:grid;grid-template-columns:1fr 1fr;gap:24px">
+                        <div>
+                            <div style="font-size:12px;font-family:var(--mono);color:var(--text3);margin-bottom:16px">ASSESSMENT DETAILS</div>
+                            <div style="display:flex;flex-direction:column;gap:12px">
+                                <div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--border)">
+                                    <span style="font-size:13px;color:var(--text2)">Milestone</span>
+                                    <span style="font-size:13px;font-weight:600;color:var(--white)">Viva Voce</span>
+                                </div>
+                                <div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--border)">
+                                    <span style="font-size:13px;color:var(--text2)">Date</span>
+                                    <span style="font-size:13px;font-family:var(--mono);color:var(--white)">2025 — Q3 (TBD)</span>
+                                </div>
+                                <div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--border)">
+                                    <span style="font-size:13px;color:var(--text2)">Marks Allocated</span>
+                                    <span style="font-size:13px;font-weight:600;color:var(--orange)">21%</span>
+                                </div>
+                                <div style="display:flex;justify-content:space-between;align-items:center">
+                                    <span style="font-size:13px;color:var(--text2)">Status</span>
+                                    <span class="badge badge-peri">Upcoming</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div style="font-size:12px;font-family:var(--mono);color:var(--text3);margin-bottom:16px">DESCRIPTION</div>
+                            <p style="font-size:13.5px;color:var(--text2);line-height:1.7">The viva is an individual oral examination where each team member defends their contribution to the research. Questions cover the technical implementation, research methodology, literature survey, and evaluation outcomes. Panel members will probe the depth of understanding.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Timeline view -->
+        <div class="section-label" style="margin-top:64px">Visual Timeline</div>
+        <h2 class="section-h mb-32">Project <span class="hl">Timeline</span></h2>
+
+        <div class="timeline">
+            <div class="tl-item">
+                <div class="tl-dot done"></div>
+                <div class="tl-title">Project Proposal</div>
+                <div class="tl-date">2023 Q3 &nbsp;·&nbsp; 6% of total marks</div>
+                <div class="tl-desc">Research problem identified, objectives defined, literature survey completed, and methodology proposed. Approved by supervisory panel.</div>
+            </div>
+            <div class="tl-item">
+                <div class="tl-dot done"></div>
+                <div class="tl-title">Progress Presentation 1 — Core Engine</div>
+                <div class="tl-date">2024 Q1 &nbsp;·&nbsp; 15% of total marks</div>
+                <div class="tl-desc">Demonstrated working AST scanner, module graph builder, and initial service generator. Two-module decomposition live demo presented.</div>
+            </div>
+            <div class="tl-item">
+                <div class="tl-dot done"></div>
+                <div class="tl-title">Progress Presentation 2 — Full Platform</div>
+                <div class="tl-date">2024 Q3 &nbsp;·&nbsp; 18% of total marks</div>
+                <div class="tl-desc">Full FractalX v0.3.x demonstrated. NetScope gRPC, saga orchestration, admin dashboard, observability, and Docker deployment shown live.</div>
+            </div>
+            <div class="tl-item">
+                <div class="tl-dot active"></div>
+                <div class="tl-title">Final Assessment — Submission &amp; Demo</div>
+                <div class="tl-date">2025 Q2 &nbsp;·&nbsp; 40% of total marks</div>
+                <div class="tl-desc">Complete project submission including final report, individual reports, evaluation document, project website, and live decomposition demonstration using FractalX v0.4.1.</div>
+            </div>
+            <div class="tl-item">
+                <div class="tl-dot pending"></div>
+                <div class="tl-title">Viva Voce — Individual Oral Defence</div>
+                <div class="tl-date">2025 Q3 (TBD) &nbsp;·&nbsp; 21% of total marks</div>
+                <div class="tl-desc">Individual oral examination before the supervisory panel. Each member defends their contribution, methodology decisions, and technical implementations.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-logo">
+            <div class="logo-mark" style="width:22px;height:22px;border-radius:5px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:12px;height:12px"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5"/><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="8.5" x2="22" y2="8.5"/><line x1="2" y1="15.5" x2="22" y2="15.5"/></svg></div>
+            FractalX Project
+        </div>
+        <div class="footer-links">
+            <a href="/" class="footer-link">Home</a>
+            <a href="/domain/" class="footer-link">Domain</a>
+            <a href="/milestones/" class="footer-link">Milestones</a>
+            <a href="/documents/" class="footer-link">Documents</a>
+            <a href="/contact/" class="footer-link">Contact</a>
+        </div>
+        <div class="footer-copy">project.fractalx.org &nbsp;·&nbsp; Apache 2.0</div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('themeToggle').addEventListener('click',()=>{document.documentElement.classList.toggle('light');localStorage.setItem('frx-theme',document.documentElement.classList.contains('light')?'light':'dark')});
+    document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('mobileMenu').classList.toggle('open'));
+
+    function toggleMS(id) {
+        const btn = document.querySelector('#' + id + ' .dropdown-btn');
+        const content = document.getElementById(id + '-content');
+        btn.classList.toggle('open');
+        content.classList.toggle('open');
+    }
+</script>
+</body>
+</html>

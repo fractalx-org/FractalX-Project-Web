@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Domain — FractalX Project</title>
+    <meta name="description" content="Research domain of the FractalX project — literature survey, research gap, research problem, objectives, methodology, and technologies used."/>
+    <link rel="canonical" href="https://project.fractalx.org/domain/"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png"/>
+    <meta name="theme-color" content="#000000"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>(function(){const s=localStorage.getItem('frx-theme'),p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(s==='light'||(!s&&!p))document.documentElement.classList.add('light')})();</script>
+    <link rel="stylesheet" href="/assets/css/main.css"/>
+</head>
+<body>
+
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="/" class="nav-logo">
+            <div class="logo-mark">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5"/><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="8.5" x2="22" y2="8.5"/><line x1="2" y1="15.5" x2="22" y2="15.5"/></svg>
+            </div>
+            FractalX <span style="color:var(--text3);font-weight:400;font-size:13px;margin-left:2px">Project</span>
+        </a>
+        <div class="nav-sep"></div>
+        <div class="nav-links">
+            <a href="/" class="nav-link">Home</a>
+            <a href="/domain/" class="nav-link active">Domain</a>
+            <a href="/milestones/" class="nav-link">Milestones</a>
+            <a href="/documents/" class="nav-link">Documents</a>
+            <a href="/presentations/" class="nav-link">Presentations</a>
+            <a href="/about/" class="nav-link">About</a>
+            <a href="/contact/" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-right">
+            <span class="nav-badge">v0.4.1</span>
+            <button class="tt" id="themeToggle" aria-label="Toggle theme">
+                <svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            </button>
+            <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+        </div>
+    </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+    <a href="/" class="mobile-link">Home</a>
+    <a href="/domain/" class="mobile-link active">Domain</a>
+    <a href="/milestones/" class="mobile-link">Milestones</a>
+    <a href="/documents/" class="mobile-link">Documents</a>
+    <a href="/presentations/" class="mobile-link">Presentations</a>
+    <a href="/about/" class="mobile-link">About</a>
+    <a href="/contact/" class="mobile-link">Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+    <div class="page-hero-inner">
+        <div class="page-tag"><span class="dot"></span>Research Domain</div>
+        <h1 class="page-h1">Project <span class="hl">Domain</span></h1>
+        <p class="page-sub">The research background, identified gap, problem statement, objectives, methodology, and technologies behind FractalX.</p>
+    </div>
+</div>
+
+<!-- LITERATURE SURVEY -->
+<section class="section">
+    <div class="section-inner">
+        <div class="section-label">Literature Survey</div>
+        <h2 class="section-h">Background &amp; Prior Work</h2>
+        <p class="section-sub">Existing research in microservices decomposition and automated tooling.</p>
+
+        <div class="card-grid" style="grid-template-columns:repeat(auto-fill,minmax(340px,1fr))">
+            <div class="card">
+                <div class="card-icon orange">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                </div>
+                <div class="card-title">Microservices Architecture</div>
+                <div class="card-desc">Lewis and Fowler (2014) established the foundational principles of microservices — small, independently deployable services each owning their data. While widely adopted, the migration path from monolith remains manual and costly.</div>
+            </div>
+            <div class="card">
+                <div class="card-icon gold">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                </div>
+                <div class="card-title">Static Code Analysis</div>
+                <div class="card-desc">AST-based program analysis (Eclipse JDT, JavaParser) enables tooling to reason about module structure, dependencies, and boundaries without executing code. This forms the core of FractalX's decomposition engine.</div>
+            </div>
+            <div class="card">
+                <div class="card-icon peri">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 0 1 2 2v7"/><line x1="6" y1="9" x2="6" y2="21"/></svg>
+                </div>
+                <div class="card-title">Service Decomposition Strategies</div>
+                <div class="card-desc">Decomposition-by-business-capability and decomposition-by-subdomain (DDD) are the two dominant strategies. Prior tools such as Mono2Micro and ServiceCutter focus on runtime data; FractalX uses annotation-driven static decomposition.</div>
+            </div>
+            <div class="card">
+                <div class="card-icon green">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div class="card-title">Distributed Sagas</div>
+                <div class="card-desc">Garcia-Molina and Salem (1987) introduced sagas for long-lived transactions. The choreography vs. orchestration debate is well-documented; FractalX adopts orchestration via an auto-generated saga orchestrator.</div>
+            </div>
+            <div class="card">
+                <div class="card-icon blue">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
+                </div>
+                <div class="card-title">gRPC &amp; Inter-Service Communication</div>
+                <div class="card-desc">HTTP/REST remains the default, but gRPC (Google, 2016) offers superior type safety, performance, and bidirectional streaming. FractalX generates gRPC stubs (NetScope) for all cross-module calls.</div>
+            </div>
+            <div class="card">
+                <div class="card-icon orange">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                </div>
+                <div class="card-title">Code Generation &amp; Templates</div>
+                <div class="card-desc">Template-based code generation (FreeMarker, Mustache, JavaPoet) powers frameworks like Spring Initializr. FractalX extends this to full microservice scaffolding, treating generation as a first-class concern.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="section-divider" style="margin:0 24px"/>
+
+<!-- RESEARCH GAP -->
+<section class="section">
+    <div class="section-inner">
+        <div class="section-label">Research Gap</div>
+        <h2 class="section-h">What Was <span class="hl">Missing</span></h2>
+
+        <div class="info-box info" style="margin-bottom:32px">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <p>Despite extensive research on microservices patterns and decomposition strategies, <strong>no existing tool provides fully automated, annotation-driven, static decomposition for Java Spring Boot applications that generates a complete, deployment-ready microservice platform</strong> from a single command.</p>
+        </div>
+
+        <div class="tbl-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tool / Approach</th>
+                        <th>Decomposition Method</th>
+                        <th>Code Generation</th>
+                        <th>Infrastructure Gen.</th>
+                        <th>Saga Support</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Mono2Micro (IBM)</strong></td>
+                        <td>Runtime call graph analysis</td>
+                        <td><span class="badge badge-red">Partial</span></td>
+                        <td><span class="badge badge-red">No</span></td>
+                        <td><span class="badge badge-red">No</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>ServiceCutter</strong></td>
+                        <td>Domain model + heuristics</td>
+                        <td><span class="badge badge-red">No</span></td>
+                        <td><span class="badge badge-red">No</span></td>
+                        <td><span class="badge badge-red">No</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Strangler Fig (manual)</strong></td>
+                        <td>Incremental, manual</td>
+                        <td><span class="badge badge-red">No</span></td>
+                        <td><span class="badge badge-red">No</span></td>
+                        <td><span class="badge badge-red">No</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Spring Initializr</strong></td>
+                        <td>Project scaffolding only</td>
+                        <td><span class="badge badge-gold">Scaffold</span></td>
+                        <td><span class="badge badge-red">No</span></td>
+                        <td><span class="badge badge-red">No</span></td>
+                    </tr>
+                    <tr style="background:rgba(244,96,12,.04)">
+                        <td><strong style="color:var(--orange)">FractalX</strong></td>
+                        <td>Static AST + annotations</td>
+                        <td><span class="badge badge-green">Full</span></td>
+                        <td><span class="badge badge-green">Full</span></td>
+                        <td><span class="badge badge-green">Full</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<hr class="section-divider" style="margin:0 24px"/>
+
+<!-- RESEARCH PROBLEM -->
+<section class="section">
+    <div class="section-inner">
+        <div class="section-label">Research Problem</div>
+        <h2 class="section-h">The Problem Statement</h2>
+
+        <div style="background:var(--bg1);border:1px solid var(--border2);border-radius:12px;padding:32px;max-width:800px;margin-bottom:40px">
+            <div style="font-size:13px;font-family:var(--mono);color:var(--orange);margin-bottom:12px;letter-spacing:.05em">RESEARCH PROBLEM</div>
+            <p style="font-size:17px;color:var(--white);font-weight:500;line-height:1.6;letter-spacing:-.2px">
+                "How can a static, annotation-driven decomposition framework automatically transform a modular Spring Boot monolith into a fully operational, production-ready microservice platform — including inter-service communication, data isolation, distributed transaction management, observability, and Docker infrastructure — from a single build command, without requiring runtime profiling or manual architectural decisions?"
+            </p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px">
+            <div style="background:var(--bg1);border:1px solid var(--border2);border-radius:var(--r);padding:20px">
+                <div style="font-size:13px;font-weight:600;color:var(--white);margin-bottom:8px">Challenge 1 — Module Detection</div>
+                <div style="font-size:13px;color:var(--text2);line-height:1.65">Reliably identifying module boundaries in a codebase through AST traversal and annotation parsing, without false positives.</div>
+            </div>
+            <div style="background:var(--bg1);border:1px solid var(--border2);border-radius:var(--r);padding:20px">
+                <div style="font-size:13px;font-weight:600;color:var(--white);margin-bottom:8px">Challenge 2 — Dependency Resolution</div>
+                <div style="font-size:13px;color:var(--text2);line-height:1.65">Resolving cross-module dependencies and generating the correct gRPC stubs and client wiring for each produced service.</div>
+            </div>
+            <div style="background:var(--bg1);border:1px solid var(--border2);border-radius:var(--r);padding:20px">
+                <div style="font-size:13px;font-weight:600;color:var(--white);margin-bottom:8px">Challenge 3 — Data Isolation</div>
+                <div style="font-size:13px;color:var(--text2);line-height:1.65">Splitting a shared database schema into per-service schemas, generating Flyway migrations and removing JPA cross-module relationships.</div>
+            </div>
+            <div style="background:var(--bg1);border:1px solid var(--border2);border-radius:var(--r);padding:20px">
+                <div style="font-size:13px;font-weight:600;color:var(--white);margin-bottom:8px">Challenge 4 — Distributed Consistency</div>
+                <div style="font-size:13px;color:var(--text2);line-height:1.65">Automatically detecting saga patterns and generating a fully functional orchestrator service with compensation logic from source annotations.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="section-divider" style="margin:0 24px"/>
+
+<!-- RESEARCH OBJECTIVES -->
+<section class="section">
+    <div class="section-inner">
+        <div class="section-label">Research Objectives</div>
+        <h2 class="section-h">Project <span class="hl">Objectives</span></h2>
+
+        <div class="timeline">
+            <div class="tl-item">
+                <div class="tl-dot done"></div>
+                <div class="tl-title">Design and implement a static annotation-driven decomposition framework for Spring Boot</div>
+                <div class="tl-date">Objective 01</div>
+                <div class="tl-desc">Build a Maven plugin that reads source code via AST analysis, resolves <code style="font-family:var(--mono);font-size:12px;color:var(--orange)">@DecomposableModule</code> boundaries, and drives the entire generation pipeline.</div>
+            </div>
+            <div class="tl-item">
+                <div class="tl-dot done"></div>
+                <div class="tl-title">Automate inter-service communication via a type-safe gRPC fabric (NetScope)</div>
+                <div class="tl-date">Objective 02</div>
+                <div class="tl-desc">Generate <code style="font-family:var(--mono);font-size:12px;color:var(--orange)">@NetScopeClient</code> interfaces and the corresponding gRPC stubs, eliminating hand-written Protobuf definitions and service stubs.</div>
+            </div>
+            <div class="tl-item">
+                <div class="tl-dot done"></div>
+                <div class="tl-title">Generate per-service data isolation with automated Flyway migration scaffolding</div>
+                <div class="tl-date">Objective 03</div>
+                <div class="tl-desc">Partition shared database schemas into isolated per-service schemas, generate migration scripts, and enforce no-cross-module JPA relationships.</div>
+            </div>
+            <div class="tl-item">
+                <div class="tl-dot done"></div>
+                <div class="tl-title">Implement distributed saga orchestration from source-level annotations</div>
+                <div class="tl-date">Objective 04</div>
+                <div class="tl-desc">Detect <code style="font-family:var(--mono);font-size:12px;color:var(--orange)">@DistributedSaga</code> methods, generate a full saga orchestrator with compensation methods, rollback logic, and a transactional outbox.</div>
+            </div>
+            <div class="tl-item">
+                <div class="tl-dot done"></div>
+                <div class="tl-title">Auto-inject observability, resilience, and admin infrastructure</div>
+                <div class="tl-date">Objective 05</div>
+                <div class="tl-desc">Auto-generate OpenTelemetry tracing, Resilience4j circuit breakers, a centralised logger service, and a 15-section admin dashboard for every generated deployment.</div>
+            </div>
+            <div class="tl-item">
+                <div class="tl-dot done"></div>
+                <div class="tl-title">Validate through real-world monolith decomposition</div>
+                <div class="tl-date">Objective 06</div>
+                <div class="tl-desc">Evaluate FractalX against a realistic e-commerce monolith (order, payment, inventory modules) and measure service generation time, correctness, and deployment readiness.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="section-divider" style="margin:0 24px"/>
+
+<!-- METHODOLOGY -->
+<section class="section">
+    <div class="section-inner">
+        <div class="section-label">Methodology</div>
+        <h2 class="section-h">How We Built It</h2>
+        <p class="section-sub">The development process follows a build-measure-validate methodology with iterative decomposition pipeline refinement.</p>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:40px">
+            <div style="background:var(--bg1);border:1px solid var(--border2);border-radius:var(--r);padding:24px">
+                <div style="font-size:11px;font-family:var(--mono);color:var(--orange);margin-bottom:10px">PHASE 01</div>
+                <div style="font-size:15px;font-weight:600;color:var(--white);margin-bottom:10px">Domain Analysis &amp; Literature Survey</div>
+                <div style="font-size:13px;color:var(--text2);line-height:1.65">Surveyed existing decomposition tools, identified gaps, and defined the annotation model and generation contract. Established naming conventions and structural rules.</div>
+            </div>
+            <div style="background:var(--bg1);border:1px solid var(--border2);border-radius:var(--r);padding:24px">
+                <div style="font-size:11px;font-family:var(--mono);color:var(--gold);margin-bottom:10px">PHASE 02</div>
+                <div style="font-size:15px;font-weight:600;color:var(--white);margin-bottom:10px">Framework Core — AST Engine</div>
+                <div style="font-size:13px;color:var(--text2);line-height:1.65">Built the annotation processor and AST scanner using JavaParser. Implemented module graph construction, dependency resolver, and cross-module reference detection.</div>
+            </div>
+            <div style="background:var(--bg1);border:1px solid var(--border2);border-radius:var(--r);padding:24px">
+                <div style="font-size:11px;font-family:var(--mono);color:var(--peri);margin-bottom:10px">PHASE 03</div>
+                <div style="font-size:15px;font-weight:600;color:var(--white);margin-bottom:10px">Code Generation Pipeline</div>
+                <div style="font-size:13px;color:var(--text2);line-height:1.65">Implemented generators for each service type: business services, gateway, registry, admin, saga orchestrator, and logger. Each generator uses template-based output production.</div>
+            </div>
+            <div style="background:var(--bg1);border:1px solid var(--border2);border-radius:var(--r);padding:24px">
+                <div style="font-size:11px;font-family:var(--mono);color:var(--green);margin-bottom:10px">PHASE 04</div>
+                <div style="font-size:15px;font-weight:600;color:var(--white);margin-bottom:10px">NetScope gRPC &amp; Saga Generation</div>
+                <div style="font-size:13px;color:var(--text2);line-height:1.65">Developed NetScope client generation from interface definitions, and the saga orchestrator generator including compensation method binding and outbox pattern integration.</div>
+            </div>
+            <div style="background:var(--bg1);border:1px solid var(--border2);border-radius:var(--r);padding:24px">
+                <div style="font-size:11px;font-family:var(--mono);color:var(--blue);margin-bottom:10px">PHASE 05</div>
+                <div style="font-size:15px;font-weight:600;color:var(--white);margin-bottom:10px">Validation &amp; Evaluation</div>
+                <div style="font-size:13px;color:var(--text2);line-height:1.65">Validated against multiple monolith implementations. Measured generation time, service correctness, runtime stability, and developer productivity. Published evaluation report.</div>
+            </div>
+            <div style="background:var(--bg1);border:1px solid var(--border2);border-radius:var(--r);padding:24px">
+                <div style="font-size:11px;font-family:var(--mono);color:var(--orange);margin-bottom:10px">PHASE 06</div>
+                <div style="font-size:15px;font-weight:600;color:var(--white);margin-bottom:10px">Release &amp; Documentation</div>
+                <div style="font-size:13px;color:var(--text2);line-height:1.65">Published to Maven Central. Produced developer guide, evaluation report, and project website. Open-sourced under Apache 2.0 license on GitHub.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="section-divider" style="margin:0 24px"/>
+
+<!-- TECHNOLOGIES -->
+<section class="section">
+    <div class="section-inner">
+        <div class="section-label">Technologies Used</div>
+        <h2 class="section-h">Technology Stack</h2>
+        <p class="section-sub">The technologies selected for building and running the FractalX framework.</p>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin-top:36px">
+            <div style="background:var(--bg1);border:1px solid var(--border2);border-radius:var(--r);padding:18px;display:flex;align-items:center;gap:14px">
+                <div style="width:40px;height:40px;border-radius:8px;background:var(--orange-dim);border:1px solid rgba(244,96,12,.2);display:grid;place-items:center;flex-shrink:0;font-weight:700;font-size:12px;font-family:var(--mono);color:var(--orange)">J21</div>
+                <div><div style="font-size:14px;font-weight:600;color:var(--white)">Java 21+</div><div style="font-size:12px;color:var(--text3)">Primary language, LTS</div></div>
+            </div>
+            <div style="background:var(--bg1);border:1px solid var(--border2);border-radius:var(--r);padding:18px;display:flex;align-items:center;gap:14px">
+                <div style="width:40px;height:40px;border-radius:8px;background:var(--green-dim);border:1px solid rgba(80,227,194,.2);display:grid;place-items:center;flex-shrink:0;font-weight:700;font-size:10px;font-family:var(--mono);color:var(--green)">SB4</div>
+                <div><div style="font-size:14px;font-weight:600;color:var(--white)">Spring Boot 3.2+ / 4.x</div><div style="font-size:12px;color:var(--text3)">Target application framework</div></div>
+            </div>
+            <div style="background:var(--bg1);border:1px solid var(--border2);border-radius:var(--r);padding:18px;display:flex;align-items:center;gap:14px">
+                <div style="width:40px;height:40px;border-radius:8px;background:var(--gold-dim);border:1px solid rgba(245,168,0,.2);display:grid;place-items:center;flex-shrink:0;font-weight:700;font-size:10px;font-family:var(--mono);color:var(--gold)">MVN</div>
+                <div><div style="font-size:14px;font-weight:600;color:var(--white)">Apache Maven</div><div style="font-size:12px;color:var(--text3)">Build &amp; plugin host</div></div>
+            </div>
+            <div style="background:var(--bg1);border:1px solid var(--border2);border-radius:var(--r);padding:18px;display:flex;align-items:center;gap:14px">
+                <div style="width:40px;height:40px;border-radius:8px;background:var(--peri-dim);border:1px solid rgba(184,196,224,.2);display:grid;place-items:center;flex-shrink:0;font-weight:700;font-size:9px;font-family:var(--mono);color:var(--peri)">AST</div>
+                <div><div style="font-size:14px;font-weight:600;color:var(--white)">JavaParser</div><div style="font-size:12px;color:var(--text3)">AST analysis engine</div></div>
+            </div>
+            <div style="background:var(--bg1);border:1px solid var(--border2);border-radius:var(--r);padding:18px;display:flex;align-items:center;gap:14px">
+                <div style="width:40px;height:40px;border-radius:8px;background:var(--blue-dim);border:1px solid rgba(50,145,255,.2);display:grid;place-items:center;flex-shrink:0;font-weight:700;font-size:10px;font-family:var(--mono);color:var(--blue)">gRPC</div>
+                <div><div style="font-size:14px;font-weight:600;color:var(--white)">gRPC / Protobuf</div><div style="font-size:12px;color:var(--text3)">Inter-service communication</div></div>
+            </div>
+            <div style="background:var(--bg1);border:1px solid var(--border2);border-radius:var(--r);padding:18px;display:flex;align-items:center;gap:14px">
+                <div style="width:40px;height:40px;border-radius:8px;background:var(--green-dim);border:1px solid rgba(80,227,194,.2);display:grid;place-items:center;flex-shrink:0;font-weight:700;font-size:9px;font-family:var(--mono);color:var(--green)">OTEL</div>
+                <div><div style="font-size:14px;font-weight:600;color:var(--white)">OpenTelemetry</div><div style="font-size:12px;color:var(--text3)">Distributed tracing</div></div>
+            </div>
+            <div style="background:var(--bg1);border:1px solid var(--border2);border-radius:var(--r);padding:18px;display:flex;align-items:center;gap:14px">
+                <div style="width:40px;height:40px;border-radius:8px;background:var(--orange-dim);border:1px solid rgba(244,96,12,.2);display:grid;place-items:center;flex-shrink:0;font-weight:700;font-size:9px;font-family:var(--mono);color:var(--orange)">R4J</div>
+                <div><div style="font-size:14px;font-weight:600;color:var(--white)">Resilience4j</div><div style="font-size:12px;color:var(--text3)">Circuit breaker, retry</div></div>
+            </div>
+            <div style="background:var(--bg1);border:1px solid var(--border2);border-radius:var(--r);padding:18px;display:flex;align-items:center;gap:14px">
+                <div style="width:40px;height:40px;border-radius:8px;background:var(--gold-dim);border:1px solid rgba(245,168,0,.2);display:grid;place-items:center;flex-shrink:0;font-weight:700;font-size:9px;font-family:var(--mono);color:var(--gold)">FLY</div>
+                <div><div style="font-size:14px;font-weight:600;color:var(--white)">Flyway</div><div style="font-size:12px;color:var(--text3)">Database migrations</div></div>
+            </div>
+            <div style="background:var(--bg1);border:1px solid var(--border2);border-radius:var(--r);padding:18px;display:flex;align-items:center;gap:14px">
+                <div style="width:40px;height:40px;border-radius:8px;background:var(--blue-dim);border:1px solid rgba(50,145,255,.2);display:grid;place-items:center;flex-shrink:0;font-weight:700;font-size:9px;font-family:var(--mono);color:var(--blue)">DCK</div>
+                <div><div style="font-size:14px;font-weight:600;color:var(--white)">Docker / Compose</div><div style="font-size:12px;color:var(--text3)">Container deployment</div></div>
+            </div>
+            <div style="background:var(--bg1);border:1px solid var(--border2);border-radius:var(--r);padding:18px;display:flex;align-items:center;gap:14px">
+                <div style="width:40px;height:40px;border-radius:8px;background:var(--peri-dim);border:1px solid rgba(184,196,224,.2);display:grid;place-items:center;flex-shrink:0;font-weight:700;font-size:9px;font-family:var(--mono);color:var(--peri)">MCN</div>
+                <div><div style="font-size:14px;font-weight:600;color:var(--white)">Maven Central</div><div style="font-size:12px;color:var(--text3)">Artifact distribution</div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-logo">
+            <div class="logo-mark" style="width:22px;height:22px;border-radius:5px">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:12px;height:12px"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5"/><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="8.5" x2="22" y2="8.5"/><line x1="2" y1="15.5" x2="22" y2="15.5"/></svg>
+            </div>
+            FractalX Project
+        </div>
+        <div class="footer-links">
+            <a href="/" class="footer-link">Home</a>
+            <a href="/domain/" class="footer-link">Domain</a>
+            <a href="/milestones/" class="footer-link">Milestones</a>
+            <a href="/documents/" class="footer-link">Documents</a>
+            <a href="/contact/" class="footer-link">Contact</a>
+        </div>
+        <div class="footer-copy">project.fractalx.org &nbsp;·&nbsp; Apache 2.0</div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('themeToggle').addEventListener('click',()=>{document.documentElement.classList.toggle('light');localStorage.setItem('frx-theme',document.documentElement.classList.contains('light')?'light':'dark')});
+    document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('mobileMenu').classList.toggle('open'));
+</script>
+</body>
+</html>
