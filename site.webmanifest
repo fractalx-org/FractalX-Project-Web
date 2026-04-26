@@ -1,7 +1,7 @@
 {
   "name": "FractalX Project",
   "short_name": "FractalX",
-  "description": "FractalX — Static Decomposition Framework for Spring Boot. Project website at project.fractalx.org.",
+  "description": "FractalX - Static Decomposition Framework for Spring Boot. Project website at project.fractalx.org.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",

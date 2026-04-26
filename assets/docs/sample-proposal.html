@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Sample — Proposal Document | FractalX Project</title>
+    <title>Sample - Proposal Document | FractalX Project</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
     <script>(function(){const s=localStorage.getItem('frx-theme'),p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(s==='light'||(!s&&!p))document.documentElement.classList.add('light')})();</script>
@@ -36,16 +36,16 @@
     <a href="/documents/" class="back-link">← Back to Documents</a>
 
     <div class="doc-header">
-        <div class="doc-watermark">SAMPLE — Placeholder Document</div>
+        <div class="doc-watermark">SAMPLE - Placeholder Document</div>
         <div class="doc-title">FractalX: Automated Static Decomposition<br>of Modular Spring Boot Monoliths</div>
         <div class="doc-sub" style="margin-top:8px">Project Proposal Document</div>
     </div>
 
     <table class="doc-meta-table">
-        <tr><td>Project Title</td><td>FractalX — Static Decomposition Framework for Spring Boot</td></tr>
+        <tr><td>Project Title</td><td>FractalX - Static Decomposition Framework for Spring Boot</td></tr>
         <tr><td>Document Type</td><td>Project Proposal</td></tr>
         <tr><td>Version</td><td>1.0 (Sample)</td></tr>
-        <tr><td>Institution</td><td>SLIIT — Sri Lanka Institute of Information Technology</td></tr>
+        <tr><td>Institution</td><td>SLIIT - Sri Lanka Institute of Information Technology</td></tr>
         <tr><td>Department</td><td>Department of Computing</td></tr>
         <tr><td>Submitted to</td><td>Dr. Supervisor Name</td></tr>
         <tr><td>Date</td><td>2023 Q3</td></tr>
@@ -54,7 +54,7 @@
 
     <h2>1. Introduction</h2>
     <p>Microservices architecture has emerged as the dominant pattern for building scalable, resilient, and independently deployable software systems. However, migrating existing monolithic applications to microservices remains a significant engineering challenge, requiring weeks of manual effort, boilerplate code writing, and architectural decision-making.</p>
-    <p>This proposal presents <strong>FractalX</strong> — an open-source static decomposition framework for Spring Boot that automates the conversion of modular monolithic applications into production-ready microservice platforms through AST analysis and build-time code generation.</p>
+    <p>This proposal presents <strong>FractalX</strong> - an open-source static decomposition framework for Spring Boot that automates the conversion of modular monolithic applications into production-ready microservice platforms through AST analysis and build-time code generation.</p>
 
     <h2>2. Research Problem</h2>
     <p>Existing tools for microservices decomposition (IBM Mono2Micro, ServiceCutter) rely on runtime call graph analysis or manual domain modelling, and produce recommendations rather than executable code. No existing tool provides:</p>
@@ -65,19 +65,19 @@
         <li>Distributed saga orchestration from source-level annotations</li>
     </ul>
 
-    <h2>3. Proposed Solution — FractalX</h2>
+    <h2>3. Proposed Solution - FractalX</h2>
     <p>FractalX introduces three annotations that developers add to their monolith, and a single Maven command that generates the complete microservice platform:</p>
     <ul>
-        <li><code style="font-family:var(--mono);color:var(--orange)">@DecomposableModule</code> — marks a module boundary</li>
-        <li><code style="font-family:var(--mono);color:var(--orange)">@DistributedSaga</code> — marks a distributed transaction method</li>
-        <li><code style="font-family:var(--mono);color:var(--orange)">@ServiceBoundary</code> — marks a cross-module interface</li>
+        <li><code style="font-family:var(--mono);color:var(--orange)">@DecomposableModule</code> - marks a module boundary</li>
+        <li><code style="font-family:var(--mono);color:var(--orange)">@DistributedSaga</code> - marks a distributed transaction method</li>
+        <li><code style="font-family:var(--mono);color:var(--orange)">@ServiceBoundary</code> - marks a cross-module interface</li>
     </ul>
 
     <h2>4. Research Objectives</h2>
     <ol>
         <li>Design and implement a static, annotation-driven AST analysis engine</li>
         <li>Build a code generation pipeline producing complete Spring Boot microservices</li>
-        <li>Implement NetScope — an auto-generated gRPC inter-service communication fabric</li>
+        <li>Implement NetScope - an auto-generated gRPC inter-service communication fabric</li>
         <li>Automate distributed saga orchestration from <code style="font-family:var(--mono);color:var(--orange)">@DistributedSaga</code> annotations</li>
         <li>Inject observability, resilience, and Docker infrastructure automatically</li>
         <li>Validate against real-world monolith scenarios</li>
